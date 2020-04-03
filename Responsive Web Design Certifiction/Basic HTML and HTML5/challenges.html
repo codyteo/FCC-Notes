@@ -1,0 +1,325 @@
+<!--problem 1-->
+<h1>"Hello World".</h1>
+
+<!--problem 2-->
+<h2>"CatPhotoApp"</h2>
+
+<!--problem 3-->
+<p>"Hello Paragraph".</p>
+
+<!--problem 4-->
+<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+<!--problem 5-->
+<!--uncomment the HTML-->
+
+<!--problem 6-->
+<!--comment h1 and p, but not h2-->
+
+<!--problem 7-->
+<!--delete h1-->
+
+<!--problem 8-->
+<!--
+    Notes:
+    more descriptive HTML tags:
+        main, header, footer, nav, video, article, section, and others
+    
+    Example usage:
+    <main>
+        <h1>Hello World</h1>
+        <p>Hello Paragraph</p>
+    </main>
+-->
+
+<!--problem 9-->
+<!--Adding images to your website by using the img element and point to a specific image's URL using the src attribute
+    <img src='https://yourimage.com/your-image.jpg'>
+    All img elements must have an alt attribute. The text inside an alt attribute is used for screen readers to improve accessbility and
+    is displayed if the image fails to load:
+    <img src='https://yourimage.com/your-image.jpg' alt='Author standing on a beach with two thumbs up' >
+-->
+
+<!--problem 10-->
+<!--you can use <a href='' > as an anchor to link to content outside of your webpage.
+    a elements need a destination web address called an href attribute. They also need anchor text.
+    Example:
+    <a href='https://freecodecamp.org'>This links to Free Code Camp</a>
+-->
+<a href='https://freecodecamp.org'>This links to Free Code Camp</a>
+
+<!--problem 11-->
+<!--
+    a elements can also be used to create internal links to jump to different sections within a webpage.
+    To create an internal link, you assign a link's href attribute to a hash symbol # plus the value of the id attribute for the element
+    that you want to internally link to, usually further down the page. You then need to add the same id attribute to the element you are
+    linking to. An id is an attribute that uniquely describes an element. Example:
+    <a href='#contacts-header'>Contacts</a>
+    ...
+    <h2 id='contacts-header'>Contacts</h2>
+-->
+<a href='#footer'>Jump to Bottom</a>
+<footer id='footer'>Copyright</footer>
+
+<!--problem 12-->
+<!--
+    nesting links within other text elements. Example:
+    <p>
+        Here's a <a target='_blank' href='https://freecodecamp.org'>link to freecodecamp.org</a> for you to follow.
+    </p>
+    Step by step:
+    1. normal text is wrapped around the p element
+    2. the anchor element within the p. target is an achor tag attribute that specifies where to open the link and the value "_blank" specifies
+    to open the link in a new tab. href is an achor tag attribute that contains the URL address of the link.
+-->
+<p>
+    View more <a href='https://catphotos.com/001.jpg' target='_blank'>cat photos</a>
+</p>
+
+<!--problem 13-->
+<!--
+    Make dead links using the hash symbol. href='#' -> clickable but is a dead link.
+-->
+<a href='#'></a>
+
+<!--problem 14-->
+<!--
+    turn an image into a link:
+    Nest your image within an a element. Example:
+    <a href='#'><img src='https://bit.ly/fcc-running-cats' alt='Three kittens running towards the camera.'></a>
+-->
+<a href='#'>
+    <img src='https://catphotos.com/your-image.jpg' alt='none'>
+</a>
+
+<!--problem 15-->
+<!--
+    Creating bulleted unordered list:
+    bullet point style lists: <ul>
+    lists: <li> Example:
+    <ul>
+        <li>number 1</li>
+        <li>number 2<li>
+    </ul>
+-->
+<ul>
+    <li>Milk</li>
+    <li>Yarn</li>
+    <li>Catnip</li>
+</ul>
+
+<!--problem 16-->
+<!--
+    Create an ordered list:
+    ordered list starts with <ol> then followed by <li> Example:
+    <ol>
+        <li></li>
+    </ol>
+-->
+<ol>
+    <li>Dogs</li>
+    <li>Getting wet</li>
+    <li>Other cats</li>
+</ol>
+
+<!--problem 17-->
+<!--
+    Create a text field/web form:
+    input element to get input from user. example:
+    <input type='text'>
+-->
+<input type='text'>
+
+<!--problem 18-->
+<!--
+    Add a placeholder text to text field:
+    using placeholder attribute. Example:
+    <input type='text' placeholder='This is placeholder text'>
+-->
+<input type='text' placeholder='please enter' >
+
+<!--problem 19-->
+<!--
+    Create a form element:
+    build web forms that actually submit data to a server using nothing more than HTML, using form element. Example:
+    <form action=' /url-where-you-want-to-submit-form-data'></form>
+-->
+<form action='/url-where-you-want-to-submit-form-data'>
+    <input type='text' placeholder='enter please'>
+</form>
+
+<!--problem 20-->
+<!--
+    Add a submit button to a form using <button> example:
+    <button type='submit'>This button submits the form</button>
+-->
+<form action='/url-where-you'>
+    <input type='text' placeholder='please Enter'>
+    <button type='submit'>Submit</button>
+</form>
+
+<!--problem 21-->
+<!--
+    Using HTML5 to require a field:
+    you can require specific form fields so that your user will not be able to submit your form until he or she has filled them out.
+    Add required within your input element. Example:
+    <input type='text' required>
+-->
+<form action='/url'>
+    <input type='text' placeholder='please enter' required>
+    <button type='submit'>Submit</button>
+</form>
+
+<!--problem 22-->
+<!--
+    Create a set of radio buttons:
+    radio buttons are a type of input for questions where you want the user to give you only one answer out of multiple.
+    Each radio button can be nested within its own label element. By wrapping an input element inside of a label element it will automatically
+    associate the radio button input with the label element surrounding it.
+
+    All related radio buttons should have the same name attribute to create a radio button group. By createing a radio group, selecting any
+    single radio button will automatically deselect the other buttons within the same group ensuring only one answer is provided. Example:
+    <label>
+        <input type='radio' name='indoor-outdoor'>Indoor
+    </label>
+
+    It is considered best practice to set a for attribute on the label element, with a value that matches the value of the id attribute of the input
+    element. This allows assistive technologies to create a linked relationship between the label and the child input element. Example:
+    <label for='indoor'>
+        <input id='indoor' type='radio' name='indoor-outdoor'>Indoor
+    </label>
+-->
+<form action='/url'>
+    <label for='indoor'>
+        <input id='indoor' type='radio' name='outdoor-indoor'>Indoor
+    </label>
+    <label for='outdoor'>
+        <input id='outdoor' type='radio' name='outdoor-indoor'>Outdoor
+    </label>
+</form>
+
+<!--problem 23-->
+<!--
+    Create a set of checkboxes, checkboxes are a type of inputs. Each of your checkboces can be nested within its own label element. By 
+    wrapping an input element inside of a label element it will automatically associate the checkbox input with the label element surrounding
+    it. All related checkboxes should have the same name attribute like above.
+
+    It is considered best practice to explicitly define the relationship between a checkbox input and its corresponding label by setting the
+    for attribute on the label element to match the id attribute of the associated input element. Example:
+
+    <label for='loving'>
+        <input id='loving' type='checkbox' name='personality'> Loving
+    </label>
+-->
+<form action='/url'>
+    <label for='loving'>
+        <input id='loving' type='checkbox' name='personality'> Loving
+    </label>
+    <label for='happy'>
+        <input id='happy' type='checkbox' name='personality'> Happy
+    </label>
+    <label for='grumpy'>
+        <input id='grumpy' type='checkbox' name='personality'> Grumpy
+    </label>
+</form>
+
+<!--problem 24-->
+<!--
+    When form is submitted, data is sent to server and includes entries for the options selected. Inputs of type radio and checkbox report
+    their values from the value attribute. Example:
+    <label for='indoor'>
+        <input id='indoor' value='indoor' type='radio' name='indoor-outdoor'> Indoor
+    </label>
+    <label for='outdoor'>
+        <input id='outdoor' value='outdoor' type='radio' name='indoor-outdoor'> Outdoor
+    </label>
+
+    With two radio inputs, user submits the form with indoor option selected, the form data will include the line indoor-outdoor=indoor.
+    this is from the name and value attributes of the "indoor" input.
+
+    If omit the value attribute, the submitted form data uses the default value, which is on. In this scenario, if the user clicked the indoor
+    option and submitted the form, the resulting form data would be: "indoor-outdoor=on" which is not useful. so the value attribute needs to be
+    set to something to identify the option.
+-->
+<form action='/url'>
+    <label for='indoor'>
+        <input id='indoor' name='indoor-outdoor' value='indoor' type='radio'> Indoor
+    </label>
+    <label for='outdoor'>
+        <input id='outdoor' name='indoor-outdoor' value='outdoor' type='radio'> Outdoor
+    </label>
+</form>
+
+<!--problem 25-->
+<!--
+    Check radio buttons and checkboxes by default, by using checked attribute. Example:
+    <input type='radio' name='test-name' checked>
+-->
+<form action='/url'>
+    <label for='indoor'>
+        <input id='indoor' value='indoor' name='indoor-outdoor' type='radio' checked> Indoor
+    </label>
+    <label for='outdoor'>
+        <input id='outdoor' value='outdoor' name='indoor=outdoor' type='radio'> Outdoor
+    </label>
+</form>
+
+<!--problem 26-->
+<!--
+    Nest many elements within a single div:
+    div element known as the division element, is a general purpose container for other elements.
+    The div element is probably the most common used HTML element of all.
+-->
+<div>
+    <form action='/url'>
+        <label for='indoor'>
+            <input id='indoor' value='indoor' type='radio' name='indoor-outdoor' checked> Indoor
+        </label>
+        <label for='outdoor'>
+            <input id='outdoor' value='outdoor' type='radio' name='indoor-outdoor'> Outdoor
+        </label>
+    </form>
+</div>
+
+<!--problem 27-->
+<!--
+    Declare the Doctype of an HTML document:
+    There are a few elements that give overall structure to your page, and should be included in every HTML document.
+    At the top of your document, you need to tell the browser which version of HTML your page is using. HTML is evolving language, and is
+    updated regularly. Most major browsers support the latest specification, which is HTML5. However, older web pages may use previous versions 
+    of the language.
+
+    You tell the browser this information by adding the <!DOCTYPE...> tag on the first line, where the ... part is the version of HTML. For
+    HTML5, use <!DOCTYPE html>
+
+    The ! and the uppercase DOCTYPE is important, especially for older browsers. The html is not case sensitive.
+
+    Next, the rest of your HTML code is wrapped in html tags. The opening <html> goes directly below <!DOCTYPE html> line, and the closing 
+    </html> goes at the end of the page. Example:
+
+    <!DOCTYPE html>
+    <html>
+        CODE GOES HERE
+    </html>
+-->
+<!DOCTYPE html>
+<html>
+    <!--code goes here :)-->
+</html>
+
+<!--problem 28-->
+<!--
+    define head and body of an HTML document. Any markup with information about your page would go into the head tag. Then any markup
+    with the content of the page(what displays for user) would go into the body tag. 
+
+    Metadata elements such as link, meta, title, and style typically go into head element. Example:
+    <!DOCTYPE html>
+    <html>
+        <head>
+            metadata elements
+        </head>
+        <body>
+            page contents
+        </body>
+    </html>
+-->

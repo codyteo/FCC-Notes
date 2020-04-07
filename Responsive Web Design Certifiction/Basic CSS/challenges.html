@@ -1,0 +1,239 @@
+<!--problem 1-->
+<!--
+    inline CSS changes
+    Changing the style of your h2 element:
+    Property that is responsible for the color of an element's text is color:
+    <h2 style='color: blue;'>CatPhotoApp</h2>
+-->
+<h2 style='color: red;'>CatPhotoApp</h2>
+
+<!--problem 2-->
+<!--
+    creating a style block to apply style of an element:
+    <style>
+        h2 {
+            color: red;
+        }
+    </style>
+
+-->
+<style>
+    h2 {
+        color: blue;
+    }
+</style>
+
+<!--problem 3-->
+<!--
+    CSS Class to style an element:
+    classes are reusable styles that can be added to HTML elements:
+    <style>
+        .blue-text {
+            color: red;
+        }
+    </style>
+    then apply class in the html element so that CSS style element can grab it.
+    All class names start with period. In your HTML elements class attribute,
+    the class name does not include the period:
+    <h2 class='blue-text'>Hello</h2>
+-->
+<style>
+    .red-text {
+        color: red;
+    }
+</style>
+<h2 class='red-text'>Hello</h2>
+
+<!--problem 4-->
+<!--
+    Classes allow you to use the same CSS styles on multiple HTML elements.
+    Put class in <p> and share CSS
+-->
+
+<!--problem 5-->
+<!--
+    font-size, to change font size of css property:
+    h1 {
+        font-size: 12px;
+    }
+-->
+<style>
+    p {
+        font-size: 16px;
+    }
+</style>
+
+<!--problem 6-->
+<!--
+    Setting font for an element by using font-family:
+    h1 {
+        font-family: monospace;
+    }
+-->
+<style>
+    p {
+        font-family: monospace;
+    }
+</style>
+
+<!--problem 7-->
+<!--
+    importing a google font:
+    google fonts is a free library of web fonts that we can use in CSS by 
+    referencing the font's URL:
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    now we can use the Lobster font in CSS by using Lobster as the FAMILY_NAME:
+    font-family: FAMILY_NAME, GENERIC_NAME;
+    generic_name is optional, and it a fallback font in-case the other specified
+    font is not available.
+
+    Family names are case-senstive and need to be wrapped in quotes if there
+    is a space in the name. For example, you need quotes to use "Open Sans",
+    but not to use the Lobster font. 
+-->
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<style>
+    h2 {
+        font-family: Lobster;
+    }
+</style>
+
+<!--problem 8-->
+<!--
+    Specify how fonts should degrade:
+    there are specific generic fonts that every browser recognizes. When one 
+    isn't available, you can tell the browser to degrade to another font:
+
+    p {
+        font-family: Lobster, monospace;
+    }
+    generic font family names are not case sensitive. no quotes either because 
+    they are CSS keywords.
+-->
+<style>
+    h2 {
+        font-family: Lobster, sans-serif;
+    }
+</style>
+
+<!--problem 9-->
+<!--
+    Css has a property called width that controls an element's width. Just like
+    with fonts, we'll use px to specify the image's width:
+
+    <style>
+        .larger-image {
+            width: 500px;
+        }
+    </style>
+-->
+<style>
+    .smaller-image {
+        width: 100px;
+    }
+</style>
+<a href='#'>
+    <img class='smaller-image' src='https://catphoto.com/image.jpg' alt='a cute orange cat' >
+</a>
+
+<!--problem 10-->
+<!--
+    CSS borders have properties like style, color and width.
+    If we wanted to create a red, 5 pixel border, we could use:
+
+    <style>
+        .thin-red-border {
+            border-color: red,
+            border-width: 5px;
+            border-style: solid;
+        }
+    </style>
+-->
+<style>
+    .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+    }
+</style>
+
+<a href='#'>
+    <img class='thick-green-border smaller-image' src='https://...' alt='...'>
+</a>
+
+<!--problem 11-->
+<!--
+    Rounded corners with border-radius. takes in pixels as value.
+    thick-green-border {
+        border-radius: 10px;
+    }
+-->
+
+<!--problem 12-->
+<!--
+    in addition to pixels, border-radius can be used with percentages:
+    p {
+        border-radius: 50%;
+    }
+-->
+
+<!--problem 13-->
+<!--
+    background color to a div element: You can set an element's background color
+    with the background-color property:
+    .green-background {
+        background-color: green;
+    }
+-->
+<style>
+    .silver-background {
+        background-color: silver;
+    }
+</style>
+<div class='silver-background'>
+    <p>hello</p>
+</div>
+
+<!--problem 14-->
+<!--
+    set the ID of an element:
+    in addition to classes, each HTML element can also have an id attribute.
+
+    Several benefits to using id attirbute: you can use id to style a single element
+    and later you'll learn that you can use them to select and modify 
+    specific elements with Javascript.
+
+    id attributes should be unique. so don't give more than one element the same id.
+
+    <h2 id='cat-photo-app'></h2>
+-->
+<form class='cat-photo-form' action='/submit-cat-photo' >
+    <label>
+        <input type='radio' name='indoor-outdoor' checked> Indoor
+    </label>
+</form>
+
+<!--problem 15-->
+<!--
+    Use an id attribute to style an element:
+    id is not reusable and should only be applied to one element. an id also
+    has a higher specificity than a class so if both are applied to the same 
+    element and have conflicting styles, the styles of the id will be applied:
+
+    <style>
+        #cat-photo-element {
+            background-color: green;
+        }
+    </style>
+-->
+<style>
+    #cat-photo-element {
+        background-color: green;
+    }
+</style>
+
+<!--problem 16-->
+<!--
+    Adjust the padding of an element --- stopped here.
+-->

@@ -11,3 +11,6 @@ Started and finished off at Basic CSS, problem 16 on adjusting the padding of an
 
 4/21/20
 Completed Basic CSS
+
+4/22/20
+Started and finished off at Applied Visual Design, problem 20 on moving elements with CSS offsets

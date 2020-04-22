@@ -8,3 +8,6 @@ Completed Basic HTML and HTML5
 
 4/6/20
 Started and finished off at Basic CSS, problem 16 on adjusting the padding of an element.
+
+4/21/20
+Completed Basic CSS
